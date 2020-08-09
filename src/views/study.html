@@ -55,7 +55,7 @@
               <option value="" disabled="" hidden="">Selecione uma opção</option>
               <!-- Dias da semana -->
               {%for weekday in weekdays%}
-              <option value="{{loop.index0}}">
+              <option value="{{loop.index0}}" {{"selected" if filters.weekday == loop.index-1 }}>
                 {{weekday}}
               </option>
               {%endfor%}
@@ -76,6 +76,12 @@
     <!-- Conteúdo principal -->
     <main>
       <!-- Container de professores -->
+
+      {% if proffys == "" %}
+
+      <p class="no-results">Nenhum professor encontrado com a sua pesquisa.</p>
+      {% else %}
+
       {%for proffy in proffys%}
       <article class="teacher-item">
         <header>
@@ -100,7 +106,7 @@
       </article>
       {%endfor%}
 
-
+      {% endif %}
 
     </main>
   </div>
