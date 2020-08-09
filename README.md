@@ -4,6 +4,14 @@ Projeto criado na segunda NLW
 O projeto inclui uma interface de cadastro de professores (feita usando HTML e CSS), além de uma interface para pesquisa de professores cadastrados.
 Essa interface é servida a partir de um servidor escrito em NodeJS, usando o express.
 
+## Screenshots:
+Que tal dar uma olhada em como o projeto ficou?
+
+<img src="landing.png" width="500">
+<img src="give-classes.png" width="500">
+<img src="study.png" width="500">
+ 
+
 ## Rodando a aplicação:
 
 1 - Clone esse repositório
