@@ -11,6 +11,7 @@ nunjucks.configure('./src/views', {
 
 server.use(express.static('public'))
 server.use(express.urlencoded({ extended: true }))
+
 server.get('/', pageLanding)
 server.get('/study', pageStudy)
 server.get('/give-classes', pageGiveClasses)
